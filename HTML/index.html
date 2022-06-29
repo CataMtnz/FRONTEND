@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos HTML</title>
+    <!--Headings-->
+    <h1>Titulo h1</h1>
+    <h2>Titulo h2</h2>
+    <h3>Titulo h3</h3>
+    <h4>Titulo h4</h4>
+    <h5>Titulo h5</h5>
+    <h6>Titulo h6</h6>
+    <!--salto de linea-->
+    <br>
+    <!--liniea horizaontal de isq a derecha-->
+    <hr>
+    <!--Parrafos, es formato bloque y con separacion arriba y abajo-->
+    <p>
+        <h2><b>Lorem ipsum dolor sit,</b> <i>amet consectetur adipisicing elit.</i> <u>Impedit error voluptatibus tempore sequi. </u> Harum, similique? Et, inventore explicabo, exercitationem illum assumenda impedit nisi asperiores praesentium ullam vero
+            tenetur. Temporibus, et.</h2>
+    </p>
+
+</head>
+
+<body>
+    <!--imagenes, alt es para cuando la imagen no se encuentra, si no agrego ancho o algo mantiene la proporción-->
+    <!--especifica la carpeta en donde se encuentra la imagen-->
+    <img src="assets/img/descarga.png" alt="Imagen 1" width="100">
+    <img src="assets/img/53j.png" alt="Imagen 1" height="100">
+    <!--CTRL + K y luego CTRL + C  -->
+    <!-- link o hipervinculos -->
+    <br>
+    <hr>
+    <a href="https://www.generation.org/">Visitar Generation </a>
+    <br>
+    <hr>
+    <!-- url valor absoluto redirige a otra pagina web  target="_blank" abre la pagina en otra pestaña-->
+    <a href="https://www.canva.com" target="_blank">Ocupa Canva</a>
+    <!-- url relativo, redirige dentro de la misma pagina -->
+    <p>
+        <a href="pagina2.html">Visitar pagina 2</a>
+    </p>
+    <!--url de anclaje, movernos dentro de la misma pagina-->
+    <br>
+    <a href="#nombre">Ir a seccion dentro de la pagina</a>
+    <br>
+    <hr>
+    <a href="pagina3.html">CV Catalina Martínez</a>
+    <!--Reempolazar el texto por una imagen-->
+    <a href="https://app.asana.com/" target="_blank">
+        <img src="assets/img/cdd9593a631fe65b1b1cdf4a96312170.jpg" alt="fight!" width="50">
+    </a>
+    <br>
+    <hr>
+    <!-- Listas Ordenadas y no ordenadas ol orden list, li list item -->
+    <ol>
+        <li>grupo 1</li>
+        <li>grupo 2</li>
+        <li>grupo 3</li>
+        <li>grupo 4</li>
+        <li>grupo 5</li>
+        <li>grupo 6</li>
+        <li>
+            <ol>
+                <li>grupo 7.1</li>
+                <li>grupo 7.2</li>
+            </ol>
+        </li>
+    </ol>
+    <!-- lista no ordenada -->
+    <ul>
+        <li>grupo 1</li>
+        <li>grupo 2</li>
+        <li>grupo 3</li>
+        <li>grupo 4</li>
+        <li>grupo 5</li>
+        <li>grupo 6</li>
+        <li>
+            <ul>
+                <li>grupo 7.1</li>
+                <ul>
+                    <li>grupo 7.1.1</li>
+                </ul>
+                <li>grupo 7.2</li>
+                <ul>
+                    <li>grupo 7.2.1</li>
+                    <ul>
+                        <li>grupo 7.2.1.1</li>
+                    </ul>
+                </ul>
+            </ul>
+            <!--
+    <ul>
+        <c:forEach items="${lista}" var="item">
+            <li>${item}</li>
+        </c:forEach>
+    </ul>-->
+
+    </ul>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Edad</th>
+                <th>Nombre</th>
+                <th>Apellido Paterno</th>
+                <th>Apellido Materno</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3</td>
+                <td>Ayun</td>
+                <td></td>
+                <td>Quezada</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Zoe</td>
+                <td>Palma</td>
+                <td></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>
