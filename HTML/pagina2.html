@@ -11,6 +11,38 @@
 <body>
     <h2>Estoy en la pagina 2</h2>
     <a href="index.html">Ir a Menú</a>
+
+    <br>
+    <!-- Radio button, elementos de seleccion tienen id != -->
+    <!--name DEBEN SER IGUALES para qye pertenezcan al mismo grupo-->
+    <!-- utilizamos el name para ingresarlo al BACKEND 
+        y el value es el que traspasa al BACKEND
+    todos son opcion y al que se le selecciona es value ej opcion = 1 (con value1), corresponde a id HTML-->
+    <input type="radio" name="opcion" id="HTML" value="html"> HTML<br>
+    <input type="radio" name="opcion" id="CSS" value="css"> CSS<br>
+    <input type="radio" name="opcion" id="js" value="js"> JavaScript<br>
+    <br>
+    <hr>
+    <!-- checkbok, name != -->
+    <!-- si tuviera un boton typo submit puedo: url?opciones1=html&opciones2=css -->
+    <label for="opciones1">HTML</label> <input type="checkbox" name="opciones1" id="opciones1" value="html"> <br>
+    <input type="checkbox" name="opciones2" id="opciones2" value="html"> CSSL<br>
+    <input type="checkbox" name="opciones3" id="opciones3" value="html"> JavaScript<br>
+    <!-- Select -->
+    <h2>Selecione una opción:</h2>
+    <!-- Select multiple <select id="lenguajes" name="lenguajes" multiple> con CTRL -->
+    <select id="lenguajes" name="lenguajes">
+        <!-- select por default, como en general se ocupa 0 hay quienes le ponen-1 por default -->
+        <option value="0" selected>Seleccione una opción</option>
+        <option value="1" >Java</option>
+        <option value="2" >Python</option>
+        <option value="3" >Ruby</option>
+        <option value="4" >JavaScript</option>
+        <option value="5" >C#</option>
+    </select>
+
+
+
 </body>
 
 </html>

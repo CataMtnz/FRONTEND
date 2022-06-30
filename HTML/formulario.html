@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Formulario de envio</h1>
+    <!-- action va la ruta, y method post postmaping en caso de llamar a jsp-->
+    <form action="" method="">
+        <label for="apellido">Apellido :</label>
+        <input id="apellido" name="apellido" placeholder="Ingresa tu apellido">
+        <br>
+        <label for="email">Ingrese su email :</label>
+        <input type="email" id="email" name="email" placeholder="ingresa tu correo">
+        <br>
+        <label for="pass">Contraseña :</label>
+        <!-- required * DEBE ingresar el dato -->
+        <input type="password" id="pass" name="pass" placeholder="ingresa tu contraseña" required>
+        <br>
+        <label for="fecha">Fecha de nacimiento :</label>
+        <input type="date" id="fecha" name="fecha" min="1900-01-01" max="2200-01-01">
+        <br>
+        <!-- Agendamiento -->
+        <label for="fecha2">Agenda tu hora :</label>
+        <input type="datetime-local" id="fecha2" name="fecha2" min="2022-06-30" max="2200-01-01">
+        <br>
+        <!-- elemento oculto visualment, EN EL QUE SE PUEDEN PASAR DATOS -->
+        <input type="hidden" id="id" name="id" value="Aprende programación, check ">
+        <br>
+        <!-- área de texto -->
+        <textarea id="textarea" name="textarea" cols="15" rows="5" minlength="2" maxlength="30" placeholder="Escribe tus comentarios"></textarea>
+
+
+        <br>
+        <input type="submit" value="Enviar">
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <hr>
+    <a href="index.html">Ir a Menú</a>
+</body>
+
+</html>
