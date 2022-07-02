@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Padding</title>
+    <style>
+        #padre {
+            width: 400px;
+            height: 400px;
+            background-color: aquamarine;
+            /*margin: 10px 20px 30px 40px;*/
+            margin-top: 15px;
+            border: 1px solid black;
+            /*padding: 10px 20px 30px 40px;*/
+            padding-left: 20px;
+        }
+        
+        #hijo {
+            width: 40px;
+            height: 40px;
+            background-color: violet;
+            display: inline-block;
+        }
+        /* el elemento de por sí tiene propiedad de bloque,
+        inline solo no pasa nada  
+        inline blok alinea con el bloque, es un ordenamiento de uno y del otro, depende del otro
+        */
+        
+        #hijo2 {
+            width: 40px;
+            height: 40px;
+            background-color: salmon;
+            display: inline-block;
+        }
+        /*margin:efecto optico desplazamiento desde paredes */
+        /*padding: desplazar internamento elementos*/
+        /* ELEMENTOS INLINE <a><img><input><label><select><textarea> 
+        ELEMENTOS BLOCK <body><div><form><h1>-<h6><p><table><ul><ol><li>
+            
+        NUNCA PONER ELEMENTOS DE BLOCK DENTRO DE UN INLINE, al revés sí :3*/
+        /* para que el elemento se comporte como block */
+        
+        a {
+            display: block;
+            background-color: rgb(229, 141, 141);
+        }
+        
+        p {
+            display: inline-block;
+            /* inline solo pierde el espacio */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="padre">
+        <div id="hijo"></div>
+        <div id="hijo2"></div>
+    </div>
+
+    <!-- nunca -->
+    <a href="index.php"></a>
+    <!-- block  elemento inline que con style lo vemos como block-->
+    <a href="grupo 1">Grupo 1</a>
+    <a href="grupo 2">Grupo 2</a>
+    <a href="grupo 3">Grupo 3</a>
+    <a href="grupo 4">Grupo 4</a>
+    <a href="grupo 5">Grupo 5</a>
+    <a href="grupo 6">Grupo 6</a>
+
+    <p>Lorem ipsum dolor sit amet consectetur</p>
+    <p>Parrafo</p>
+</body>
+
+</html>
