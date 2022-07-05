@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery1</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        /*para trabajar con funciones en JAVAScript*/
+        $(document).ready(function() {
+            //asignar funcionalidad por ID, CLASE, ELEMENTO
+            $('p').click(function() {
+                $(this).text("cambio por uso de this");
+                alert();
+            });
+
+            //get and set
+            $('#btn1').click(function() {
+                //creacion de variable, obtenemos los valores del elemento
+                let parrafo1 = $('#p1').text();
+                alert("evento click" + parrafo1);
+                //set
+                $('#p1').text('Esto es un nuevo mensaje');
+            });
+
+            //funciones de efecto
+            //hide-> ocultar elemento
+            $('#btn2').click(function() {
+                $('#p2').hide();
+            });
+
+            //show
+            $('#btn3').click(function() {
+                $('#p2').show();
+            });
+
+            //toggle
+            $('#btn4').click(function() {
+                $('#p2').toggle();
+            });
+
+            //SLIDE-> ocultar elemento
+            $('#btn5').click(function() {
+                $('#p3').slideUp(2000);
+            });
+
+            $('#btn6').click(function() {
+                $('#p3').slideDown('faster');
+            });
+
+            $('#btn7').click(function() {
+                $('#p3').slideToggle('slow');
+            });
+            //Fade
+            $('#btn8').click(function() {
+                $('#p4').fadeIn(2000);
+            });
+
+            $('#btn9').click(function() {
+                $('#p4').fadeOut('faster');
+            });
+
+            $('#btn10').click(function() {
+                $('#p4').fadeToggle('slow');
+            });
+
+            //borra el texto completamente comprobar consola
+            $('#btn11').click(function() {
+                $('#p4').fadeTo('slow');
+            });
+
+            //fin jquery   
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Getter y Setter</h1>
+    <p id="p1"> esto es un parrafo 1</p>
+    <button id="btn1">get & set</button>
+    <br>
+    <hr>
+    <!-- Hide -->
+    <h1>Hide- show - toggle</h1>
+    <p id="p2"> esto es un parrafo 2</p>
+    <button id="btn2">hide()</button>
+    <button id="btn3">show()</button>
+    <button id="btn4">toggle()</button>
+    <br>
+    <hr>
+    <!-- SlideUp SlideDown SlideToggle -->
+    <h1>SlideUp- SlideShow - SlideToggle</h1>
+    <p id="p3"> esto es un parrafo 3</p>
+    <button id="btn5">SlideUp()</button>
+    <button id="btn6">SlideDown()</button>
+    <button id="btn7">SlideToggle()</button>
+    <br>
+    <hr>
+    <!-- FadeIn FadeOut FadeToggle -->
+    <h1>SlideUp- SlideShow - SlideToggle</h1>
+    <p id="p4"> esto es un parrafo 4</p>
+    <button id="btn8">FadeIn()</button>
+    <button id="btn9">FadeOut()</button>
+    <button id="btn10">FadeToggle()</button>
+    <button id="btn11">FadeTo()</button>
+    <br>
+    <hr>
+
+</body>
+
+</html>

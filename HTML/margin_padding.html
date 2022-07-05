@@ -41,9 +41,9 @@
         ELEMENTOS BLOCK <body><div><form><h1>-<h6><p><table><ul><ol><li>
             
         NUNCA PONER ELEMENTOS DE BLOCK DENTRO DE UN INLINE, al revés sí :3*/
-        /* para que el elemento se comporte como block */
         
         a {
+            /* para que el elemento ANCOR INLINE se comporte como block */
             display: block;
             background-color: rgb(229, 141, 141);
         }
@@ -51,6 +51,52 @@
         p {
             display: inline-block;
             /* inline solo pierde el espacio */
+        }
+        
+        #default1 {
+            width: 50px;
+            height: 100px;
+            background-color: red;
+            display: inline-block;
+        }
+        
+        #default2 {
+            width: 50px;
+            height: 200px;
+            background-color: blue;
+            display: inline-block;
+        }
+        
+        #top1 {
+            width: 50px;
+            height: 100px;
+            background-color: red;
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        #top2 {
+            width: 50px;
+            height: 200px;
+            background-color: blue;
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        #middle1 {
+            width: 50px;
+            height: 100px;
+            background-color: red;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        #middle2 {
+            width: 50px;
+            height: 200px;
+            background-color: blue;
+            display: inline-block;
+            vertical-align: middle;
         }
     </style>
 </head>
@@ -73,6 +119,28 @@
 
     <p>Lorem ipsum dolor sit amet consectetur</p>
     <p>Parrafo</p>
+
+    <!-- alineacion por default, se da a través de la seccion button -->
+    <div>
+        <div id="default1"></div>
+        <div id="default2"></div>
+    </div>
+    <!-- alineacion vertical (superior) -->
+    <div>
+        <div id="top1"></div>
+        <div id="top2"></div>
+    </div>
+    <!-- alineacion vertical central -->
+    <div>
+        <div id="top1"></div>
+        <div id="top2"></div>
+    </div>
+    <!-- alineacion por middle -->
+    <br>
+    <div>
+        <div id="middle1"></div>
+        <div id="middle2"></div>
+    </div>
 </body>
 
 </html>

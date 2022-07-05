@@ -1,0 +1,182 @@
+ p {
+            /* ancho */
+            width: 200px;
+            /* alto */
+            height: 50px;
+            /*background: blue url("assets/img/53j.png");*/
+            /* como reloj arrib, abajo, derecha, isquierda */
+            scroll-behavior: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-family: 10pt;
+            /*font-family: adlery pro;*/
+        }
+        
+        div {
+            width: 400px;
+            height: 400px;
+            /* barra de desplazamiento */
+            overflow: scroll;
+            background: url("assets/img/53j.png") no-repeat;
+            background-color: blue;
+            background-size: 50%;
+            border: 1px solid #ccc;
+            border-top-color: aqua;
+            border-radius: 10px;
+        }
+        /* hexagecimal 0123456789ABCDF RGB tricotomia de los colores
+        RGB (255, 255,0)
+
+
+todo 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de estilo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        p {
+            /* ancho */
+            width: 200px;
+            /* alto */
+            height: 50px;
+            /*background: blue url("assets/img/53j.png");*/
+            /* como reloj arrib, abajo, derecha, isquierda */
+            scroll-behavior: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-family: 10pt;
+            /*font-family: adlery pro;*/
+        }
+        
+        div {
+            width: 400px;
+            height: 400px;
+            /* barra de desplazamiento */
+            overflow: scroll;
+            background: url("assets/img/53j.png") no-repeat;
+            background-color: blue;
+            background-size: 50%;
+            border: 1px solid #ccc;
+            border-top-color: aqua;
+            border-radius: 10px;
+        }
+        /* hexagecimal 0123456789ABCDF RGB tricotomia de los colores
+        RGB (255, 255,0)
+        # 12 ROJO
+        34 VERDE
+        56 AZOL
+         */
+        
+        a {
+            text-decoration: none;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        /* posicio: static, relative, fixed, absolute, st.. */
+        
+        .estatico {
+            width: 500px;
+            height: 200px;
+            position: static;
+        }
+        
+        .relativo {
+            width: 500px;
+            height: 20px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="#">link de prueba</a>
+        <p>parrafo 1</p>
+    </div>
+    <div class="estatico">
+        <p>este es un texto con posicionamiento estatico</p>
+    </div>
+
+    <hr>
+    <a href="index.html">Ir a Menú</a>
+</body>
+
+</html>
+        # 12 ROJO
+        34 VERDE
+        56 AZOL
+         */
+        
+        a {
+            text-decoration: none;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        /* posicio: static, relative, fixed, absolute, st.. */
+        
+        .estatico {
+            width: 500px;
+            height: 200px;
+            position: static;}
+
+
+todo
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Padding</title>
+    <style>
+        #padre {
+            width: 400px;
+            height: 400px;
+            background-color: aquamarine;
+            /* si agregamos 2 valores arribaabajo y izqderecha
+            si anoto 3 ariba, isq derecha, abajo 
+            si agregaamos 4 es por reloj arriba, derecha, abajo, isquierda 
+            o bien por separado margin: top right down left 
+            notacion Xpx Auto, da el efecto de centrado*/
+            margin: 0px 0px 0px 0px;
+            /* border, pornerlo del mismo COLOR, limita al padre no lo desplaza, el hijo PUEDE SALIR DEL PADRE y suma 1|1, si no quiero cambiar el tamaño po 298px */
+            padding: 10px;
+        }
+        
+        #hijo {
+            width: 40px;
+            height: 40px;
+            background-color: rgb(180, 126, 231);
+            /* efecto optico la pantalla vale 20|20 (40), + 360 = 400 px del padre */
+            margin: 20px auto;
+        }
+        
+        #hijo2 {
+            width: 40px;
+            height: 40px;
+            background-color: salmon;
+        }
+        /* como efecto optico provoca desplazamiento */
+    </style>
+</head>
+
+<body>
+    <div id="padre">
+        <div id="hijo"></div>
+    </div>
+</body>
+
+</html>
