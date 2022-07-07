@@ -68,15 +68,112 @@
 
             //borra el texto completamente comprobar consola
             $('#btn11').click(function() {
-                $('#p4').fadeTo('slow');
+                $('#p4').fadeTo('faster');
             });
+
+            /*MANIPULACION DE EFECTOS HTML, crear o eliminar elementos de html
+            escribimos de manera dinamica elementos de otro HTMLafter, 
+            podemos agregar, tablas, formularios completos, construir una PAGINA DINAMICA
+            teniendo en cuenta que sigue con su modalidad linea, bloque
+            inyectamos como etiqueta de imagen
+            after construye el título después del parrafo, y despues del título la imagen
+            CONSTRUYENDO no estamos linkeando*/
+            //AFTER
+            $('#btn12').click(function() {
+                $('#p5').after('<h2>título h2</h2>');
+                $('#p5').after('<img src="" alt="prueba">');
+
+            });
+
+            //BEFORE
+            $('#btn13').click(function() {
+                $('#p5').before('<h3>título h3</h3>');
+                $('#p5').before('<img src="" alt="prueba1">');
+
+            });
+            $('#btn14').click(function() {
+                $('#p5').insertBefore('<>');
+
+            });
+            /*dentro de un elemento de bloque vamoms a agregar un elemento inline
+            tabla, y en esta tabla agregar todos los elementos body de manera dinamica
+            SELECTOR podemos agregar de manera dinamica*/
+            //append ->agrega entre la etiqueta al final
+            $('#btn15').click(function() {
+                $('#p5').append('<img src="" alt="prueba1">');
+                //if y contador == 0 agrega si no no lo haga 
+            });
+            //prepend ->agrega entre la etiqueta al principio 
+            $('#btn16').click(function() {
+                $('#p5').prepend('<img src="" alt="prueba1">');
+
+            });
+
+            /*uso en CSS
+            atributo, valor
+            se puede poner un input en el button y dar valor al seleccionar
+            */
+            //attr --> agrega un atributo a un elemento html
+
+            $('#btn17').click(function() {
+                $('#p6').attr('name', 'parrafo6');
+                $('#p6').attr('style', 'color:red; font-size:30px');
+                $('#txt1').attr('value', 'generationg1');
+
+            });
+
+            //html --> agrega o crea/ un elemento HTML y BORRA TODO LO ANTERIOR
+            $('#btn18').click(function() {
+                $('#p7').html('<span> etiqueta span </span>');
+
+            });
+            //VAL --> captura el valor, el elemento del HTML
+            $('#btn19').click(function() {
+                let valor = $('valor').val(); //capturar el valor del elemento lo guardamos en la variable e imprimimos el valor
+                alert(valor);
+            });
+
+            /*Manipulación de estilo AGREGAR LA CLASE REMOVER LA CLASE Y AGREGAR EL CSS
+            este parrafo no existe a la hora que se cargo la pagina todo por eso no lo afecta
+            el cambio de parrafo asignado a TODO ELEMENTO DE PARRAFO*/
+            //html
+            $('#btn20').click(function() {
+                $('#div1').html('<p id="p9">parrafo dentro de div</p>');
+                $('#p9').css("color", "green")
+                    //probar agregar varias cosas con ;
+                $('#p9').css("font-size", "10px")
+            });
+            $('#btn21').click(function() {
+                $('#div1').addClass('div1')
+                $('#div1').addClass('divColor')
+
+                //-->quita todo si no especifica, 
+            });
+            $('#btn22').click(function() {
+                $('#div1').removeClass()
+            });
+
 
             //fin jquery   
         });
     </script>
+    <style>
+        .div1 {
+            width: 600px;
+            height: 300px;
+            background-color: salmon;
+        }
+        
+        .divColor {
+            width: 400px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+    </style>
 </head>
 
 <body>
+
     <h1>Getter y Setter</h1>
     <p id="p1"> esto es un parrafo 1</p>
     <button id="btn1">get & set</button>
@@ -107,7 +204,44 @@
     <button id="btn11">FadeTo()</button>
     <br>
     <hr>
+    <!-- manipulacion -->
+    <h1>Esto es un elemento HTML</h1>
+    <p id="p5"> esto es un parrafo 5</p>
+    <button id="btn12">after()</button>
+    <button id="btn13">before()</button>
+    <button id="btn14">Insertbefore()</button>
+    <button id="btn15">append()</button>
+    <button id="btn16">prepend()</button>
+    <br>
+    <hr>
+    <h1>Esto es un elemento HTML</h1>
+    <p id="p6"> esto es un parrafo 6</p>
+    <input type="text" id="txt1">
+    <button id="btn17">attr()</button>
+    <br>
+    <hr>
+    <!-- HTML -->
+    <h1>Etiqueta HTML</h1>
+    <p id="p7"> esto es un parrafo 7</p>
+    <button id="btn18">html()</button>
+    <br>
+    <hr>
+    <!-- VAl -->
+    <h1>VAL</h1>
+    <p id="p8"> esto es un parrafo 8</p>
+    <input type="text" id="txt2" value="valor input txt2">
+    <button id="btn19">val()</button>
+    <br>
+    <hr>
+    <!-- construccion dinamica CSS, agregar y quitar clase  -->
+    <div id="div1">
 
+    </div>
+    <button id="btn20">ccs()</button>
+    <button id="btn21">addClase()</button>
+    <button id="btn22">removeclass()</button>
+    <br>
+    <hr>
 </body>
 
 </html>
